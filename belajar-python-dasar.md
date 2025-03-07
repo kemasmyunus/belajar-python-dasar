@@ -103,3 +103,48 @@ try:
 except ValueError:
     print("Terjadi kesalahan konversi")
 ```
+
+## 9. Modul dan Package
+### 9.1 Menggunakan Modul
+Python memiliki banyak modul bawaan.
+```python
+import math
+print(math.sqrt(16))
+```
+
+### 9.2 Membuat Modul Sendiri
+Buat file `modulku.py`:
+```python
+def sapa(nama):
+    return f"Halo, {nama}!"
+```
+Gunakan di file lain:
+```python
+import modulku
+print(modulku.sapa("John"))
+```
+
+## 10. Input dan Output
+Digunakan untuk berinteraksi dengan pengguna.
+```python
+nama = input("Masukkan nama: ")
+print(f"Halo, {nama}")
+```
+
+## 11. Pemrograman Berorientasi Objek (OOP) di Python
+OOP memungkinkan kita untuk membuat objek dengan atribut dan metode.
+```python
+class Mahasiswa:
+    def __init__(self, nama, umur):
+        self.nama = nama
+        self.umur = umur
+
+    def perkenalan(self):
+        return f"Nama saya {self.nama}, umur {self.umur} tahun."
+
+mhs = Mahasiswa("John", 20)
+print(mhs.perkenalan())
+```
+
+## 12. Penutup
+Python adalah bahasa pemrograman yang fleksibel dan kuat. Dengan memahami dasar-dasarnya, Anda dapat membangun berbagai macam aplikasi. Selamat belajar!
