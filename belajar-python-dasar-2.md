@@ -95,3 +95,21 @@ soup = BeautifulSoup(response.text, "html.parser")
 
 print(soup.title.text)
 ```
+
+## 17. Pengujian Kode dengan Unit Test
+Unit testing digunakan untuk menguji bagian kecil dari kode secara otomatis.
+
+### 17.1 Contoh Pengujian
+```python
+import unittest
+
+def tambah(a, b):
+    return a + b
+
+class TestMath(unittest.TestCase):
+    def test_tambah(self):
+        self.assertEqual(tambah(2, 3), 5)
+
+if __name__ == "__main__":
+    unittest.main()
+```
