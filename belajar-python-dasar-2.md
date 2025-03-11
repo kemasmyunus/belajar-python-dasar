@@ -61,3 +61,18 @@ print(cursor.fetchall())
 ```python
 conn.close()
 ```
+
+## 15. Pemrograman Asinkron dengan `asyncio`
+Python mendukung pemrograman asinkron untuk meningkatkan kinerja program yang menangani banyak tugas secara bersamaan.
+
+### 15.1 Contoh Program Asinkron
+```python
+import asyncio
+
+async def sapa():
+    await asyncio.sleep(1)
+    print("Halo, Dunia!")
+
+asyncio.run(sapa())
+```
+
