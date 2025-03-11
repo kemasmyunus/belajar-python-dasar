@@ -76,3 +76,22 @@ async def sapa():
 asyncio.run(sapa())
 ```
 
+## 16. Web Scraping dengan BeautifulSoup
+BeautifulSoup digunakan untuk mengambil data dari halaman web.
+
+### 16.1 Instalasi BeautifulSoup
+```sh
+pip install beautifulsoup4 requests
+```
+
+### 16.2 Contoh Web Scraping
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://example.com"
+response = requests.get(url)
+soup = BeautifulSoup(response.text, "html.parser")
+
+print(soup.title.text)
+```
