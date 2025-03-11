@@ -21,3 +21,43 @@ with open("data.txt", "w") as file:
 with open("data.txt", "a") as file:
     file.write("Tambahan teks ke dalam file.\n")
 ```
+
+## 14. Database dengan SQLite
+SQLite adalah database ringan yang dapat digunakan dalam Python menggunakan modul `sqlite3`.
+
+### 14.1 Membuat dan Menghubungkan Database
+```python
+import sqlite3
+
+conn = sqlite3.connect("database.db")
+cursor = conn.cursor()
+```
+
+### 14.2 Membuat Tabel
+```python
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS mahasiswa (
+    id INTEGER PRIMARY KEY,
+    nama TEXT,
+    umur INTEGER
+)
+""")
+conn.commit()
+```
+
+### 14.3 Menambah Data
+```python
+cursor.execute("INSERT INTO mahasiswa (nama, umur) VALUES (?, ?)", ("John", 20))
+conn.commit()
+```
+
+### 14.4 Membaca Data
+```python
+cursor.execute("SELECT * FROM mahasiswa")
+print(cursor.fetchall())
+```
+
+### 14.5 Menutup Koneksi
+```python
+conn.close()
+```
