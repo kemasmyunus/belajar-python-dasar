@@ -68,3 +68,33 @@ Loop atau perulangan digunakan untuk mengeksekusi kode berulang kali.
   ```
 
 - Gunakan `break` untuk keluar dari loop, `continue` untuk melewati satu iterasi.
+
+## 5. Fungsi dan Return Value
+
+Fungsi adalah blok kode yang dapat digunakan kembali. Digunakan untuk mengorganisasi program agar lebih modular.
+
+```python
+def sapa(nama):
+    return f"Halo {nama}"
+
+print(sapa("Kema"))
+```
+
+Fungsi bisa memiliki parameter default, menerima beberapa parameter, dan mengembalikan nilai (`return`). Fungsi juga mendukung *scope* variabel lokal dan global.
+
+## 6. List, Tuple, dan Set
+
+- **List** adalah kumpulan data yang dapat diubah (mutable):
+  ```python
+  buah = ["apel", "jeruk"]
+  buah.append("mangga")
+  ```
+- **Tuple** adalah versi list yang tidak dapat diubah (immutable):
+  ```python
+  angka = (1, 2, 3)
+  ```
+- **Set** adalah kumpulan unik tanpa urutan:
+  ```python
+  angka_set = {1, 2, 2, 3}  # hasil: {1, 2, 3}
+  ```
+Set berguna untuk operasi himpunan seperti gabungan, irisan, dan perbedaan.
