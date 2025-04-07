@@ -29,3 +29,42 @@ kalimat = "Halo Dunia"
 print(kalimat.upper())      # HALO DUNIA
 print(kalimat[0:4])         # Halo
 ```
+
+## 3. Pengkondisian (if, elif, else)
+
+Pengkondisian digunakan untuk membuat logika program:
+```python
+usia = 20
+if usia >= 18:
+    print("Dewasa")
+elif usia >= 13:
+    print("Remaja")
+else:
+    print("Anak-anak")
+```
+
+Python juga mengenal **operator logika** seperti `and`, `or`, dan `not` untuk membuat kondisi yang kompleks. Misalnya:
+```python
+if usia > 18 and status == "pelajar":
+    print("Pelajar dewasa")
+```
+
+## 4. Looping (for dan while)
+
+Loop atau perulangan digunakan untuk mengeksekusi kode berulang kali.
+
+- `for` digunakan untuk iterasi terstruktur, contohnya:
+  ```python
+  for i in range(5):
+      print(i)  # mencetak angka 0 sampai 4
+  ```
+
+- `while` digunakan ketika kondisi masih terpenuhi:
+  ```python
+  x = 0
+  while x < 5:
+      print(x)
+      x += 1
+  ```
+
+- Gunakan `break` untuk keluar dari loop, `continue` untuk melewati satu iterasi.
