@@ -98,3 +98,33 @@ Fungsi bisa memiliki parameter default, menerima beberapa parameter, dan mengemb
   angka_set = {1, 2, 2, 3}  # hasil: {1, 2, 3}
   ```
 Set berguna untuk operasi himpunan seperti gabungan, irisan, dan perbedaan.
+
+## 7. Dictionary (Kamus)
+
+Dictionary menyimpan data dalam format key-value. Cocok untuk data yang saling berpasangan seperti nama dan umur.
+
+```python
+siswa = {"nama": "Kema", "umur": 23}
+print(siswa["nama"])
+siswa["umur"] = 24
+```
+
+Method umum:
+- `.keys()` untuk mengambil semua key
+- `.values()` untuk mengambil semua nilai
+- `.items()` untuk pasangan key dan value
+
+## 8. Exception Handling
+
+Error bisa menyebabkan program berhenti. Python menyediakan blok `try-except` untuk menangani error agar program tetap berjalan.
+
+```python
+try:
+    hasil = 10 / 0
+except ZeroDivisionError:
+    print("Tidak bisa bagi nol!")
+finally:
+    print("Selesai mencoba.")
+```
+
+Kita juga bisa membuat pengecualian untuk beberapa jenis error sekaligus.
