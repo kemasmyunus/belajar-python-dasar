@@ -163,3 +163,27 @@ Konsep penting:
 - **Encapsulation:** menyembunyikan data internal
 - **Inheritance:** pewarisan class induk ke class anak
 - **Polymorphism:** metode dengan nama sama berperilaku berbeda
+
+## 11. Modul dan Package
+
+Modul adalah file Python yang bisa digunakan ulang.
+
+- Modul built-in:
+  ```python
+  import math
+  print(math.sqrt(16))
+  ```
+
+- Modul buatan sendiri:
+  Buat file `hello.py`:
+  ```python
+  def sapa():
+      print("Halo dunia!")
+  ```
+  Kemudian import di file utama:
+  ```python
+  import hello
+  hello.sapa()
+  ```
+
+Packages adalah folder berisi banyak modul, biasanya digunakan dalam proyek besar.
