@@ -128,3 +128,38 @@ finally:
 ```
 
 Kita juga bisa membuat pengecualian untuk beberapa jenis error sekaligus.
+
+## 9. File Handling
+
+Membaca dan menulis file adalah kemampuan penting dalam pemrograman. Python memudahkan manipulasi file teks:
+
+- **Membaca file:**
+  ```python
+  with open("data.txt", "r") as file:
+      isi = file.read()
+  ```
+- **Menulis file:**
+  ```python
+  with open("data.txt", "w") as file:
+      file.write("Halo dunia!")
+  ```
+- `"a"` digunakan untuk menambahkan data tanpa menghapus isi lama.
+
+## 10. Object Oriented Programming (OOP)
+
+OOP memungkinkan kita membuat class untuk merepresentasikan objek nyata dengan atribut dan perilaku.
+
+```python
+class Siswa:
+    def __init__(self, nama, umur):
+        self.nama = nama
+        self.umur = umur
+
+murid = Siswa("Kema", 23)
+print(murid.nama)
+```
+
+Konsep penting:
+- **Encapsulation:** menyembunyikan data internal
+- **Inheritance:** pewarisan class induk ke class anak
+- **Polymorphism:** metode dengan nama sama berperilaku berbeda
